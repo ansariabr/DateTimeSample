@@ -12,12 +12,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 2.2.108
-    - name: List Directory before setting WD
-      run: ls
-    - name: List Directory after setting WD
-      working-directory: ./DateTimeSample
-      run: ls
+        dotnet-version: 3.1.101
     - name: Build with dotnet
       working-directory: ./DateTimeSample
       run: dotnet build --configuration Release
